@@ -2,10 +2,10 @@ const remark = require("remark");
 
 module.exports = {
   siteMetadata: {
-    title: `Vapor`,
-    author: `Vaporwavy`,
+    title: `JJ BLOG`,
+    author: `장재원`,
     description: `A blog for minimalist`,
-    siteUrl: `https://vapor.aesthetic.codes/`,
+    siteUrl: `https://www.naver.com`,
     social: {
       twitter: ``,
     },

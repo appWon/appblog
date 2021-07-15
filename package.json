@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "jaewonblog",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "재원이의 개발블로그 입니다",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "jaewon",
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
