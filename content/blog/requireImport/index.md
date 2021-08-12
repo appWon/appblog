@@ -1,6 +1,6 @@
 ---
 title: require vs import ???
-date: "2020-03-14"
+date: "2021-03-14"
 tags: [es6]
 thumbnail : ./typography.png
 

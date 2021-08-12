@@ -1,6 +1,6 @@
 ---
 title: react + webpack5 + babel7 세팅
-date: "2020-06-14"
+date: "2021-06-14"
 tags: [babel, webpack]
 thumbnail : 
 ---
@@ -67,6 +67,7 @@ npm i -D webpack webpack-cli
 ```javascript
 //webpack.config.js
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     mode: 'development',
@@ -74,7 +75,24 @@ module.exports = {
     output: {
         filename: 'main.js',
         path: path.resolve(__dirname + '/public/dist/')
-    }
+    },
+    module: {
+        rules: [
+            {
+                test: /\.(js|jsx)$/,
+                exclude: /nodeModules/,
+                loader: 'babel-loader',
+            }
+        ]
+    },
+    resolve: {
+        extensions: ['.js', '.jsx']
+    },
+    plugins: [
+		new HtmlWebpackPlugin({
+			template: './public/index.html'
+		})
+	]
 }
 ```
 
@@ -174,13 +192,14 @@ npm i -D @babel/preset-env
 //.babelrc
 {
     "presets": [
+        ["@babel/preset-react"],
         [
         	"@babel/preset-env",
 	        {
-          	modules: false,
-	        	"targets: "> 0.25%, not dead",
+          	    "modules": false,
+	        	"targets": "> 0.25%, not dead"
 	        }
-				]
+        ]
     ]
 }
 
@@ -263,7 +282,7 @@ module.export = {
 }
 ```
 
-<br/>jn
+<br/>
 
 
 
