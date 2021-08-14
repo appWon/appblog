@@ -2,12 +2,14 @@
 title: react + webpack5 + babel7 세팅
 date: "2021-06-14"
 tags: [babel, webpack]
-thumbnail : 
+thumbnail : '../../assets/rwb.png'
 ---
 
 
 
 # 개발환경구축
+
+<hr>
 
 ```
 npm init -y
@@ -59,6 +61,8 @@ export default App;
 <br/><br/><br/>
 
 ## webpack
+
+<hr>
 
 ```
 npm i -D webpack webpack-cli
@@ -114,6 +118,8 @@ jsx 문법으로 작성된 App파일을 처리하기 위해서는 babel-load를 
 <br/>
 
 ## babel
+
+<hr>
 
 공식문서에는 babel은 자바스크립트 컴파일러라고 하며, es2015코드를 이전 버전의 자바스크립트로 변환하는데 사용하는 도구라고 한다.
 
@@ -228,6 +234,8 @@ or
 
 ### Webpack-dev-server 설정
 
+<hr>
+
 cors error: 프록시  설정 https://joshua1988.github.io/webpack-guide/devtools/webpack-dev-server.html#webpack-dev-server
 
 ```
@@ -254,6 +262,8 @@ module.exports = {
 <br/><br/>
 
 ### plugins
+
+<hr>
 
 ```
 npm i -D html-webpack-plugin

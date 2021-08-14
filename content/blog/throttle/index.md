@@ -2,7 +2,7 @@
 title: React 최적화 - throttle
 date: "2021-07-04"
 tags: [최적화]
-thumbnail : 
+thumbnail : '../../assets/react.png'
 
 
 ---
@@ -10,6 +10,8 @@ thumbnail :
 
 
 # Browser resize 이벤트
+
+<hr>
 
 ```javascript
 useEffect(()=>{
@@ -74,6 +76,8 @@ useEffect(()=>{
 
 # console.log(window.innerHeight)
 
+<hr>
+
 ![](https://images.velog.io/images/app235/post/1d42736e-ece3-4e82-aef2-7180a76999bd/%E1%84%8C%E1%85%A5%E1%86%AB.gif)
 
 사용자 인터페이스 이벤트 중 `resize` 를 이용하여 Browser 창 크기가 변했을 때 아이템들의 좌표가 수정이 되도록 구현을 해보았다.
@@ -89,6 +93,8 @@ useEffect(()=>{
 <br/><br/>
 
 # { throttle } from lodash
+
+<hr>
 
 ```javascript
 import { throttle } from lodash;
