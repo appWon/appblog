@@ -197,16 +197,16 @@ npm i -D @babel/preset-env
 ```
 //.babelrc
 {
-    "presets": [
-        ["@babel/preset-react"],
-        [
-        	"@babel/preset-env",
-	        {
-          	    "modules": false,
-	        	"targets": "> 0.25%, not dead"
-	        }
-        ]
+  "presets": [
+    ["@babel/preset-react"],
+    [
+      "@babel/preset-env",
+      {
+        "modules": false,
+        "targets": "> 0.25%, not dead"
+      }
     ]
+  ]
 }
 
 or
@@ -255,6 +255,7 @@ module.exports = {
 ...
   devServer: {
     port: 3000,
+  }
 ...
 }
 ```
