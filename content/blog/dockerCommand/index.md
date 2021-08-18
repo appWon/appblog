@@ -2,7 +2,7 @@
 title: 도커 명령어
 date: "2021-08-05"
 tags: [docker]
-thumbnail : ./compose.png
+thumbnail : ../../assets/docker.png
 ---
 
 <br><br>
@@ -10,6 +10,15 @@ thumbnail : ./compose.png
 ## 도커 이미지
 
 <hr>
+
+##### 생성
+
+```
+docker build -t {이미지명} .
+//Dockerfile을 사용하여 image 생성(파일 경로 기준)
+```
+
+
 
 ##### 리스트
 
@@ -28,10 +37,10 @@ docker pull 이미지 이름
 
 
 
-##### 이미지로 컨테이너 생성
+##### 삭제
 
 ```
-docker create {옵션} 이미지 이름
+docker rmi -f 이미지id
 ```
 
 
@@ -41,6 +50,14 @@ docker create {옵션} 이미지 이름
 ## 도커 컨테이너
 
 <hr>
+
+##### 생성
+
+```
+docker create {옵션} 이미지 이름
+```
+
+
 
 ##### 리스트
 
@@ -65,13 +82,15 @@ docker restart 컨테이너 이름
 
 
 
-#### 중지
+#### 정지
 
 ```
+docker stop 컨네이너 이름
+// 정지
 docker stop $(docker ps -aq)
+// 컨테이너 전체 정지
 docker system prune -a
-// 컨테이너 전체 중지
-// 사용x 컨테이너 전체 삭제
+// 사용x 컨테이너, 이미지 전체 삭제
 ```
 
 
@@ -80,19 +99,6 @@ docker system prune -a
 
 ```
 docker rm 컨테이너 name
-```
-
-
-
-<br><br>
-
-## 도커 이미지생성
-
-<hr>
-
-```
-docker build -t {이미지명} .
-//Dockerfile을 사용하여 image 생성(파일 경로 기준)
 ```
 
 

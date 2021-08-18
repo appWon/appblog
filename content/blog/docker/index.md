@@ -2,7 +2,7 @@
 title: 도커
 date: "2021-08-01"
 tags: [docker]
-thumbnail : ./docker.png
+thumbnail : ../../assets/docker.png
 
 ---
 
