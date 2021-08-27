@@ -11,6 +11,20 @@ thumbnail : ../../assets/js.png
 
 <br>
 
+###### Includes
+
+배열의 각 항목을 참조하여 `조건이 맞는 항목이 있으면 true 반환 후 즉시 종료`
+
+```javascript
+const numberList = [ 1, 2, 3, 4, 5];
+numberList.includes(2)
+// true
+```
+
+<br>
+
+<br>
+
 ###### some
 
 배열의 각 항목을 참조하여 `조건이 맞는 항목이 있으면 true 반환 후 즉시 종료`
