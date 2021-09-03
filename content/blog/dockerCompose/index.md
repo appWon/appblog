@@ -1,11 +1,13 @@
 ---
-title: 도커 컴포즈
+title: "[ docker-compose ]"
 date: "2021-08-06"
 tags: [docker]
 thumbnail : ../../assets/compose.png
 ---
 
 <br><br>
+
+## docker-compose.yml
 
 Compose는 다중 컨테이너를 생성 및 실행하기 위한 도구입니다.
 
@@ -59,3 +61,7 @@ volume  :  컨테이가 종료 or 재시작이 될 경우 `데이터가 사라�
 <br>
 
 port : 접속 포트를 변경할 수 있다. 1234 : 8000 로 설정을 하면 호스트 컴퓨터에서 1234 접속하면 컨테이너에서는 8000으로 접속을 할 수있다.
+
+<br>
+
+<br>

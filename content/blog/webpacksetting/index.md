@@ -186,7 +186,7 @@ or
 
 
 
-##### @babel/preset-env
+##### @babel/preset-env 
 
 바벨에서 `es6 코드를 변환`하기 위해서 사용이 된다.
 
@@ -227,6 +227,35 @@ or
 `"target: "> 0.25%, not dead"`  옵션을 보면 대상을 시장 점유율 0.25% AND 업데이트가 계속 되는 브라우저를 대상으로 한다
 
 > modules: 성능 최적화를 위한 Tree shaking의 목적으로 false 설정을 하여야 import, export 문법이 require,modules.exports로 바뀌지 않는다.
+
+// -- 8월 29일 수정
+
+`async await` 설정을 위해 변경
+
+1. babel 설치
+
+```
+npm i -D @babel/plugin-transform-runtime
+npm i -S @babel/runtime @babel/runtime-corejs3
+```
+
+2. .babelrc 변경
+
+```
+{
+  "presets": ["@babel/preset-react", "@babel/preset-env"],
+  "plugins": [
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "corejs": 3
+      }
+    ]
+  ]
+}
+```
+
+
 
 <br/><br/>
 
